@@ -83,3 +83,64 @@ nav {
   .nav-right {
     margin-right: auto;
   }
+
+  .container {
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 20em 20em 20em;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header footer footer"
+    "header header footer footer"
+    "main main footer footer"
+    "main main footer footer";
+    gap: 5em;
+  }
+
+
+  .time {
+    background-color: white;
+    grid-area: header;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 4em;
+    box-shadow: 0px 2px 5px 0px rgba(101, 87, 184, 0.4);
+  }
+
+  .birthday {
+    background-color: white;
+    grid-area: main;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 4em;
+    box-shadow: 0px 2px 5px 0px rgba(101, 87, 184, 0.4);
+  }
+
+  .partners  {
+    background-color: white;
+    grid-area: footer;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 4em;
+    box-shadow: 0px 2px 5px 0px rgba(101, 87, 184, 0.4);
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 6em);
+  }
+
+  h1 {
+    color: var(--c-dark-purple);
+    font-size: 2rem;
+  }

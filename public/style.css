@@ -88,13 +88,11 @@ nav {
     width: 80%;
     height: 80%;
     display: grid;
-    grid-template-columns: 20em 20em 20em;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "header header footer footer"
-    "header header footer footer"
-    "main main footer footer"
-    "main main footer footer";
+    "header footer"
+    "main footer";
     gap: 5em;
   }
 

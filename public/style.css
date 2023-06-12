@@ -156,3 +156,13 @@ nav {
     font-size: 3.5em;
     text-shadow: 0px 2px 5px 0px rgba(101, 87, 184, 0.4);
   }
+
+  @media screen and (max-width: 1550px) {
+    .date, .clock-time, h1 {
+      font-size: 2em;
+    }
+
+    .birthday, .time, .partners {
+      padding: 2em;
+    }
+}

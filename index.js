@@ -1,5 +1,6 @@
 // Importeer express uit de node_modules map
 import express from 'express'
+import fetch from 'node-fetch'
 
 const url = 'https://demofdnd.simplicate.nl/api/v2/crm/organization'
 const data = await fetch(url).then((response) => response.json())

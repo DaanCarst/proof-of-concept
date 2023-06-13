@@ -2,9 +2,6 @@
 import express from 'express'
 import fetch from 'node-fetch'
 
-const url = 'https://demofdnd.simplicate.nl/api/v2/crm/organization'
-const data = await fetch(url).then((response) => response.json())
-
 // Maak een nieuwe express app aan
 const app = express()
 
@@ -16,10 +13,33 @@ app.set('views', './views')
 app.use(express.static('public'))
 
 // Maak een route voor de index
-app.get('/', function (req, res) {
-  // res.send('Hello World!')
-  res.render('index', data)
-})
+app.get('/', (req, res) => {
+  const url = "https://demofdnd.simplicate.nl/api/v2/crm/organization"; // Replace with the actual API endpoint URL
+  const headers = {
+    "Authentication-Key": "",
+    "Authentication-Secret": ""
+  }
+ 
+  // Make the API request using fetch and the headers
+  fetch(url, { headers })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Request failed with status " + response.status);
+      }
+      return response.json();
+    })
+    .then(data => {
+      // Render the EJS view with the fetched data
+      res.render('index', { data });
+      const dataArray = data.data;
+      console.log(data);
+    })
+    .catch(error => {
+      // Handle any errors that occurred during the request
+      console.error(error);
+      res.status(500).send('Error occurred');
+    });
+});
 
 // Stel het poortnummer in waar express op gaat luisteren
 app.set('port', process.env.PORT || 8000)

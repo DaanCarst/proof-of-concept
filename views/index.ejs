@@ -15,8 +15,10 @@
     </section>
 
     <section class="partners">
-      <h1>Sales</h1>
-    
+      <h1>Partners</h1>   
+      <% data.data.forEach(function(organization) { %>
+        <p><%= organization.name %></p> 
+      <% }); %></p>
     </section>
   </section>
 </main>

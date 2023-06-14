@@ -1,6 +1,7 @@
 // Importeer express uit de node_modules map
 import express from 'express'
 import fetch from 'node-fetch'
+import "dotenv/config";
 
 // Maak een nieuwe express app aan
 const app = express()
@@ -14,10 +15,10 @@ app.use(express.static('public'))
 
 // Maak een route voor de index
 app.get('/', (req, res) => {
-  const url = "https://demofdnd.simplicate.nl/api/v2/crm/organization"; // Replace with the actual API endpoint URL
+  const url = "https://demofdnd.simplicate.nl/api/v2/crm/organization?limit=100"; // Replace with the actual API endpoint URL
   const headers = {
-    "Authentication-Key": "",
-    "Authentication-Secret": ""
+    'Authentication-Key': process.env.simplicateApiKey,
+    'Authentication-Secret': process.env.simplicateApiSecret
   }
  
   // Make the API request using fetch and the headers

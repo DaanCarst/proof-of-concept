@@ -16,9 +16,11 @@
 
     <section class="partners">
       <h1>Partners</h1>   
-      <% data.data.forEach(function(organization) { %>
-        <p><%= organization.name %></p> 
-      <% }); %></p>
+      <div class="partner-container">
+        <% data.data.forEach(function(organization) { %>
+          <p class="partner-name"><%= organization.name %> <span class="since"><%= organization.created_at %></span></p> 
+        <% }); %>
+      </div>
     </section>
   </section>
 </main>

@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
   const url = "https://demofdnd.simplicate.nl/api/v2/crm/organization?limit=11"; // Replace with the actual API endpoint URL
   const headers = {
     'Authentication-Key': process.env.simplicateApiKey,
-    'Authentication-Secret': process.env.simplicateApiSecret
+    'Authentication-Secret': process.env.simplicateApiSecret,
   }
  
   // Make the API request using fetch and the headers

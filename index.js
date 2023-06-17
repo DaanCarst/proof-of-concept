@@ -15,7 +15,8 @@ app.use(express.static('public'))
 
 // Maak een route voor de index
 app.get('/', (req, res) => {
-  const url = "https://demofdnd.simplicate.nl/api/v2/crm/organization?limit=11"; // Replace with the actual API endpoint URL
+  const url = "https://demofdnd.simplicate.nl/api/v2/crm/organization?limit=11"; 
+  // const url = "https://demofdnd.simplicate.nl/api/v2/crm/person?limit=4";  // Replace with the actual API endpoint URL
   const headers = {
     'Authentication-Key': "gS7sibGSth6GQfDkGdLx9AU8T3cj1DoB",
     'Authentication-Secret': "eiZOT04oWOcQUg2XEzkiI42XyvNInifc"

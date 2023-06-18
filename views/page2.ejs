@@ -1,0 +1,34 @@
+<%- include('./partials/head') %>
+
+<main>
+  <section class="container-2">
+    <section class="time-2">
+      <h1>Tijd</h1>
+        <div>
+          <p id="clock" class="clock-time"></p>
+          <span id="date" class="date"></span>
+        </div>
+    </section>
+
+    <section class="birthday-2">
+      <h1>Recentste Partner</h1>
+      <p class="partner-name-recent"><%= data.data[0].name %></p>
+      <p class="partner-time"><%= data.data[0].created_at %></p>
+      <br>
+      <p class="partner-mail"><%= data.data[0].url %></p>
+      <p class="partner-mail"><%= data.data[0].phone %></p>
+      <p class="partner-mail"><%= data.data[0].email %></p>
+    </section>
+
+    <section class="partners-2">
+      <h1>Partners</h1>   
+      <div class="partner-container">
+        <% data.data.forEach(function(organization) { %>
+          <p class="partner-name"><%= organization.name %> <span class="since"><%= organization.created_at %></span></p> 
+        <% }); %>
+      </div>
+    </section>
+  </section>
+</main>
+
+<%- include('./partials/foot') %>

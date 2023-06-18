@@ -16,7 +16,7 @@ app.use(express.static('public'))
 // Maak een route voor de index
 app.get('/', (req, res) => {
   const url = "https://demofdnd.simplicate.nl/api/v2/crm/organization?limit=11"; 
-  // const url = "https://demofdnd.simplicate.nl/api/v2/crm/person?limit=4";  // Replace with the actual API endpoint URL
+  // const urlbirthday = "https://demofdnd.simplicate.nl/api/v2/crm/person?limit=100";  // Replace with the actual API endpoint URL
   const headers = {
     'Authentication-Key': "gS7sibGSth6GQfDkGdLx9AU8T3cj1DoB",
     'Authentication-Secret': "eiZOT04oWOcQUg2XEzkiI42XyvNInifc"
@@ -30,6 +30,14 @@ app.get('/', (req, res) => {
       }
       return response.json();
     })
+    // fetch(urlbirthday, { headers })
+    // .then(response => {
+    //   if (!response.ok) {
+    //     throw new Error("Request failed with status " + response.status);
+    //   }
+    //   return response.json();
+    // })
+
     .then(data => {
       // Render the EJS view with the fetched data
       res.render('index', { data });
@@ -45,7 +53,7 @@ app.get('/', (req, res) => {
 
 app.get('/page2', (req, res) => {
   const url = "https://demofdnd.simplicate.nl/api/v2/crm/organization?limit=11"; 
-  // const url = "https://demofdnd.simplicate.nl/api/v2/crm/person?limit=4";  // Replace with the actual API endpoint URL
+  const urlbirthday = "https://demofdnd.simplicate.nl/api/v2/crm/person?limit=100";  // Replace with the actual API endpoint URL
   const headers = {
     'Authentication-Key': "gS7sibGSth6GQfDkGdLx9AU8T3cj1DoB",
     'Authentication-Secret': "eiZOT04oWOcQUg2XEzkiI42XyvNInifc"
@@ -59,6 +67,14 @@ app.get('/page2', (req, res) => {
       }
       return response.json();
     })
+    fetch(urlbirthday, { headers })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Request failed with status " + response.status);
+      }
+      return response.json();
+    })
+
     .then(data => {
       // Render the EJS view with the fetched data
       res.render('page2', { data });
@@ -74,7 +90,7 @@ app.get('/page2', (req, res) => {
 
 app.get('/page3', (req, res) => {
   const url = "https://demofdnd.simplicate.nl/api/v2/crm/organization?limit=11"; 
-  // const url = "https://demofdnd.simplicate.nl/api/v2/crm/person?limit=4";  // Replace with the actual API endpoint URL
+  const urlbirthday = "https://demofdnd.simplicate.nl/api/v2/crm/person?limit=100";  // Replace with the actual API endpoint URL
   const headers = {
     'Authentication-Key': "gS7sibGSth6GQfDkGdLx9AU8T3cj1DoB",
     'Authentication-Secret': "eiZOT04oWOcQUg2XEzkiI42XyvNInifc"
@@ -88,6 +104,14 @@ app.get('/page3', (req, res) => {
       }
       return response.json();
     })
+    fetch(urlbirthday, { headers })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Request failed with status " + response.status);
+      }
+      return response.json();
+    })
+
     .then(data => {
       // Render the EJS view with the fetched data
       res.render('page3', { data });

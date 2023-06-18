@@ -134,7 +134,7 @@ nav {
     border-radius: 10px;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
     padding: 4em;
     box-shadow: 0px 2px 5px 0px rgba(101, 87, 184, 0.4);
@@ -168,7 +168,7 @@ nav {
     border-radius: 10px;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
     padding: 4em;
     box-shadow: 0px 2px 5px 0px rgba(101, 87, 184, 0.4);
@@ -203,7 +203,7 @@ nav {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 4em;
     box-shadow: 0px 2px 5px 0px rgba(101, 87, 184, 0.4);
   }

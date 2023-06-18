@@ -116,6 +116,7 @@ nav {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    flex-direction: column;
     padding: 4em;
     box-shadow: 0px 2px 5px 0px rgba(101, 87, 184, 0.4);
   }
@@ -176,6 +177,30 @@ nav {
 
   .since {
     float: right;
+  }
+
+  .partner-name-recent {
+    margin-top: .6em;
+    color: var(--c-purple);
+    font-size: 2rem;
+    padding: .4em;
+    margin-left: -.5em;
+  }
+
+  .partner-time {
+    margin-top: -.6em;
+    color: var(--c-purple);
+    font-size: 2rem;
+    padding: .4em;
+    margin-left: -.5em;
+  }
+
+  .partner-mail {
+    margin-top: -.6em;
+    color: var(--c-purple);
+    font-size: 1.5rem;
+    padding: .4em;
+    margin-left: -.5em;
   }
 
   @media screen and (max-width: 1550px) {

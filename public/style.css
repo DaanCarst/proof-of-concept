@@ -305,7 +305,7 @@ nav {
     margin-left: -.5em;
   }
 
-  .partner-mail {
+  .partner-mail, .partner-link {
     margin-top: -.6em;
     color: var(--c-purple);
     font-size: 1.5rem;
@@ -313,17 +313,34 @@ nav {
     margin-left: -.5em;
   }
 
+  .partner-link {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 300px;
+    overflow: hidden;
+  }
+
+  .birthday-empty {
+    color: var(--c-purple);
+    font-size: 1.5rem;
+    margin-top: 1em;
+  }
+
   @media screen and (max-width: 1550px) {
-    .date, .clock-time, h1 {
-      font-size: 2em;
+     h1, .date, .clock-time {
+      font-size: 1.6em;
     }
 
-    .birthday, .time, .partners {
+    .birthday, .birthday-2, .birthday-3, .time, .time-2, .time-3, .partners, .partners-2, .partners-3 {
       padding: 2em;
     }
 
     .partner-name, .since {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       margin-left: -0.4em;
+    }
+
+    .partner-name-recent, .partner-time, .partner-mail, .partner-link {
+      font-size: 1.1rem;
     }
   }

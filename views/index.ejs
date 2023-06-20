@@ -3,14 +3,14 @@
 <main>
   <section class="container">
     <section class="time">
-      <h1>Verjaardag</h1>
+      <h2>Verjaardag</h2>
         <div>
           <p class="birthday-empty">Vandaag is niemand jarig</p>
         </div>
     </section>
 
     <section class="birthday">
-      <h1>Recentste Partner</h1>
+      <h2>Recentste Partner</h2>
       <p class="partner-name-recent"><%= data.data[0].name %></p>
       <p class="partner-time"><%= data.data[0].created_at %></p>
       <br>
@@ -20,7 +20,7 @@
     </section>
 
     <section class="partners">
-      <h1>Partners</h1>   
+      <h2>Partners</h2>   
       <div class="partner-container">
         <% data.data.forEach(function(organization) { %>
           <p class="partner-name"><%= organization.name %> <span class="since"><%= organization.created_at %></span></p> 

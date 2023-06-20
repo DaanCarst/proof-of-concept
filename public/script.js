@@ -6,7 +6,7 @@ function startTime() {
     hr = (hr > 12) ? hr - 12 : hr;
     hr = checkTime(hr);
     min = checkTime(min);
-    document.getElementById("clock").innerHTML = hr + ":" + min;
+    document.getElementById("clock").textContent = hr + ":" + min;
     
     var months = ['Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December'];
     var days = ['Zondag', 'Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag'];
@@ -15,7 +15,7 @@ function startTime() {
     var curMonth = months[today.getMonth()];
     var curYear = today.getFullYear();
     var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
-    document.getElementById("date").innerHTML = date;
+    document.getElementById("date").textContent = date;
     
     var time = setTimeout(function(){ startTime() }, 500);
 }

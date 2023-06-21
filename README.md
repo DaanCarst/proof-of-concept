@@ -6,16 +6,14 @@
   * [Gebruik](#gebruik)
   * [Kenmerken](#kenmerken)
   * [Installatie](#installatie)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
 
 ## Beschrijving
 
 Vervoerregio Amsterdam wou een website hebben waarop een overzicht staat van alle verschillende criteria van de WCAG richtlijnen, aan de hand van de WCAG richtlijnen kan Vervoereggio Amsterdam vervolgens hun partners gaan controleren en kijken aan hoeveel van de richtlijnen hun partner website's voldoen.
 
-![responsive](https://github.com/WesleySchorel/performance-matters-optimized-website/assets/112856287/ef96e081-4ea4-443f-8bea-d7615e9d6872)
+![responsive](https://cdn.discordapp.com/attachments/793090681010257933/1121003206613409812/Screenshot_2023-06-21_110614.jpg)
 
-Link naar de website: https://relieved-rose-donkey.cyclic.app/
+Link naar de website: https://simplicate-fdnd.adaptable.app/
 
 ## Gebruik
 
@@ -47,7 +45,7 @@ Op de website hebben wij de toolboard pagina gemaakt en daarin rekening gehouden
 
 ### Rest API
 
-In dit project maak ik gebruik van de REST API for Toolgankelijkheid van Vervoerregio Amsterdam. De documentatie van deze Api is te vinden op: https://api.vervoerregio-amsterdam.fdnd.nl/
+In dit project maak ik gebruik van de REST API van Simplicate. De documentatie van deze Api is te vinden op: https://developer.simplicate.com/
 
 ## Installatie
 
@@ -56,7 +54,3 @@ Download of clone dit project van deze Github pagina.
 Download de aanbevolen versie op nodejs.org en installeer vanaf deze wwebsite de Node ontwikkelomgeving. Tijdens dit project heb ik gebruik gemaakt van 18.14.0 LTS, download de benodigde bestanden en doorloop het installatieproces van Node.
 
 Open de terminal in Visual Studio Code en installeer Node doormiddel van het commando npm init. Voer hierna npm install uit. Om de pagina te open start je een server op door middel van npm start. Als de server weer gesloten moet worden kan je control + c / ^c gebruiken.
-
-## Bronnen
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
-https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/

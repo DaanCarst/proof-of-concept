@@ -5,6 +5,12 @@ import "dotenv/config";
 
 // Maak een nieuwe express app aan
 const app = express()
+const url = "https://demofdnd.simplicate.nl/api/v2/crm/organization?limit=11"; 
+  // const urlbirthday = "https://demofdnd.simplicate.nl/api/v2/crm/person?limit=100";  // Replace with the actual API endpoint URL
+  const headers = {
+    'Authentication-Key': "gS7sibGSth6GQfDkGdLx9AU8T3cj1DoB",
+    'Authentication-Secret': "eiZOT04oWOcQUg2XEzkiI42XyvNInifc"
+  }
 
 // Stel ejs in als template engine en geef de 'views' map door
 app.set('view engine', 'ejs')
@@ -15,13 +21,6 @@ app.use(express.static('public'))
 
 // Maak een route voor de index
 app.get('/', (req, res) => {
-  const url = "https://demofdnd.simplicate.nl/api/v2/crm/organization?limit=11"; 
-  // const urlbirthday = "https://demofdnd.simplicate.nl/api/v2/crm/person?limit=100";  // Replace with the actual API endpoint URL
-  const headers = {
-    'Authentication-Key': "gS7sibGSth6GQfDkGdLx9AU8T3cj1DoB",
-    'Authentication-Secret': "eiZOT04oWOcQUg2XEzkiI42XyvNInifc"
-  }
- 
   // Make the API request using fetch and the headers
   fetch(url, { headers })
     .then(response => {
@@ -52,13 +51,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/page2', (req, res) => {
-  const url = "https://demofdnd.simplicate.nl/api/v2/crm/organization?limit=11"; 
-  // const urlbirthday = "https://demofdnd.simplicate.nl/api/v2/crm/person?limit=100";  // Replace with the actual API endpoint URL
-  const headers = {
-    'Authentication-Key': "gS7sibGSth6GQfDkGdLx9AU8T3cj1DoB",
-    'Authentication-Secret': "eiZOT04oWOcQUg2XEzkiI42XyvNInifc"
-  }
- 
   // Make the API request using fetch and the headers
   fetch(url, { headers })
     .then(response => {
@@ -83,13 +75,6 @@ app.get('/page2', (req, res) => {
 });
 
 app.get('/page3', (req, res) => {
-  const url = "https://demofdnd.simplicate.nl/api/v2/crm/organization?limit=11"; 
-  // const urlbirthday = "https://demofdnd.simplicate.nl/api/v2/crm/person?limit=100";  // Replace with the actual API endpoint URL
-  const headers = {
-    'Authentication-Key': "gS7sibGSth6GQfDkGdLx9AU8T3cj1DoB",
-    'Authentication-Secret': "eiZOT04oWOcQUg2XEzkiI42XyvNInifc"
-  }
- 
   // Make the API request using fetch and the headers
   fetch(url, { headers })
     .then(response => {

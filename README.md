@@ -9,9 +9,9 @@
 
 ## Beschrijving
 
-Vervoerregio Amsterdam wou een website hebben waarop een overzicht staat van alle verschillende criteria van de WCAG richtlijnen, aan de hand van de WCAG richtlijnen kan Vervoereggio Amsterdam vervolgens hun partners gaan controleren en kijken aan hoeveel van de richtlijnen hun partner website's voldoen.
+Simplicate wou een website waar je speciale data zou kunnen zien van een bedrijf wat je dan weer op een scherm kunt tonen zodat iedereen kan zien wat er die dag gaande is.
 
-![responsive](https://cdn.discordapp.com/attachments/793090681010257933/1121003206613409812/Screenshot_2023-06-21_110614.jpg)
+![website](https://cdn.discordapp.com/attachments/793090681010257933/1121003206613409812/Screenshot_2023-06-21_110614.jpg)
 
 Link naar de website: https://simplicate-fdnd.adaptable.app/
 
@@ -19,29 +19,27 @@ Link naar de website: https://simplicate-fdnd.adaptable.app/
 
 ### User stories
 
-Tijdens deze sprint hebben we aan de volgende user stories gewerkt: 
-
-"Als gebruiker wil ik een URL kunnen toevoegen aan een website, zodat ik kan bijhouden aan welke toegankelijkheidsrichtlijnen die URL voldoet" en "Als gebruiker wil ik een overzicht van toegankelijkheidsrichtlijnen kunnen bekijken, om te begrijpen wat er moet gebeuren om een website/app toegankelijker te maken"
+"Als gebruiker wil ik data uit een API makkelijk kunnen bekijken op een groot scherm zodat ik weet wat er die dag allemaal gaande is"
 
 ### Gebruik van de website
 
-De doelgroep / de gebruikers van Vervoerregio Amsterdam zijn hun medewerkers. De medewerkers kunnen deze website dus gebruiken om hun partners te controleren op toegankelijkheid volgens de WCAG richtlijnen.
+De doelgroep van de website zijn mensen die bij simplicate op kantoor werken en kijken naar een scherm waar de info op staat
 
-De website is een projectboard waarop je een overzicht heb van alle verschillende partners van Vervoerregio Amsterdam, in het projectboard kan je een partner kiezen waardoor je vervolgens een overzicht krijgt van alle URLS die momenteel in de database staan van deze partner. Vervolgens kan je een van deze URLS aan klikken om naar de toolboard pagina te gaan waarop je de verschillende criteria kan afvinken als de website hieraan voldoet. Ook is er een formulier op de pagina waarop je extra URLS aan een specifieke partner kan toevoegen.
+Op deze website kan je dan gemakkelijk zien welke partners Simplicate heeft en wie de meest recente partner is. Het was ook de bedoeling om te kunnen zien wie die dag jarig zou zijn alleen is die functie mij uiteindelijk niet gelukt. Op deze website kan je ook de datum en tijd bekijken.
 
 ## Kenmerken
 
-In dit project hebben wij gebruik gemaakt van veel verschillende technieken zoals Node,  Express, EJS, Rest API, server-/client-side JS, CSS en HTML. Met deze technieken hebben wij veel kunnen toepassen op de website zoals:
+In dit project heb ik gebruik gemaakt van veel verschillende technieken zoals Node,  Express, EJS, Rest API, server-/client-side JS, CSS en HTML. Met deze technieken heb ik veel kunnen toepassen op de website zoals:
 
 * Progressive Enchancement
-* Responsive Images
-* Lazy loading
+* Live clock
+* Responsive
 
 ### Progressive Enhancement 
 
 Progressive Enhancement is een ontwerpprincipe voor websites die ervoor zorgt dat de basisfunctionaliteit van een website altijd beschikbaar is. Zelfs als bepaalde delen van een website niet werken.
 
-Op de website hebben wij de toolboard pagina gemaakt en daarin rekening gehouden met Progressive Enhancement. Wij zijn begonnen met een lege HTML pagina en daarin eerst een summary/detail element ingezet zodat wij een altijd werkende dropdown menu kregen die ook werkt wanneer de JS dus niet werkt, vervolgens zijn wij bezig geweest om dit te stylen zodat het er net en goed uit kwam te zien. Nadat dit was gedaan hebben wij met client-side JS ervoor gezorgd dat je altijd maar 1 detail/summary element open kan hebben staan en dat wanneer je er 1 sluit je naar de bovenkant gaat van degene die je hebt geopent. 
+Op deze website was progressive enhancement niet enorm belangrijk omdat het altijd op dezelfde soort grote schermen getoond kan worden, toch heb ik nog een paar punten gegeven dat als onder andere de CSS wegvalt dat je de data nogsteeds duidelijk kunt lezen.
 
 ### Rest API
 

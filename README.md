@@ -45,6 +45,17 @@ Op deze website was progressive enhancement niet enorm belangrijk omdat het alti
 
 In dit project maak ik gebruik van de REST API van Simplicate. De documentatie van deze Api is te vinden op: https://developer.simplicate.com/
 
+### Zero State
+
+Voor de deeltaak van de zero state heb ik 6 schetsen gemaakt, hierin toon ik telke een ander visuele hierarchie of layout. Dit herb ik gedaan om te kijken of ik andere manieren kon vinden om mijn website te tonen. In de wiki van deze opdracht staan de schetsen.
+
+Zero state schetsen: https://github.com/DaanCarst/proof-of-concept/wiki/Ontwerpen#final-schets-en-zero-states
+Zero state 1: https://simplicate-fdnd.adaptable.app/ 
+Zero state 2: https://simplicate-fdnd.adaptable.app/page2
+Zero state 3: https://simplicate-fdnd.adaptable.app/page3
+
+Deze zero states heb ik laten zien aan mijn opdrachtgever om te vragen om wat feedback van wat hun vinden. Hier kwam het erop uit dat hun dezelfde mening hadden als dat ik had en de pagina waar ik sinds het begin al mee bezig was het beste vonden. Wel heb ik hier wat meer feedback punten mee kunnen krijgen op mijn design. Deze punten heb ik vervolgens toegepast.
+
 ## Installatie
 
 Download of clone dit project van deze Github pagina.

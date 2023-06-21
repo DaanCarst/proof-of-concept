@@ -22,10 +22,6 @@
     color: var(--c-black);
     background: var(--c-light);
   }
-  
-  h2 {
-    color: var(--c-pink);
-  }
 
 nav {
     position: sticky;
@@ -102,7 +98,7 @@ nav {
     grid-template-areas: 
     "header footer"
     "main footer";
-    gap: 5em;
+    gap: 2em;
   }
   .container-2 {
     width: 80%;
@@ -113,7 +109,7 @@ nav {
     grid-template-areas: 
     "footer header"
     "footer main";
-    gap: 5em;
+    gap: 3em;
   }
   .container-3 {
     width: 80%;
@@ -239,7 +235,7 @@ nav {
   }
 
   h2 {
-    color: var(--c-dark-purple);
+    color: #252628;
     font-size: 2rem;
   }
 
@@ -269,7 +265,7 @@ nav {
 
   .partner-name {
     margin-top: .6em;
-    color: var(--c-purple);
+    color: #6f7376;
     font-size: 2rem;
     border-bottom: 2px solid var(--c-dark-purple);
     margin-top: -2px;
@@ -287,11 +283,12 @@ nav {
 
   .since {
     float: right;
+    color: #6f7376;
   }
 
   .partner-name-recent {
     margin-top: .6em;
-    color: var(--c-purple);
+    color: #6f7376;
     font-size: 2rem;
     padding: .4em;
     margin-left: -.5em;
@@ -299,7 +296,7 @@ nav {
 
   .partner-time {
     margin-top: -.6em;
-    color: var(--c-purple);
+    color: #6f7376;
     font-size: 2rem;
     padding: .4em;
     margin-left: -.5em;
@@ -307,21 +304,21 @@ nav {
 
   .partner-mail, .partner-link {
     margin-top: -.6em;
-    color: var(--c-purple);
+    color: #6f7376;
     font-size: 1.5rem;
     padding: .4em;
     margin-left: -.5em;
   }
 
-  .partner-link {
+  /* .partner-link {
     white-space: nowrap;
     text-overflow: ellipsis;
     width: 300px;
     overflow: hidden;
-  }
+  } */
 
   .birthday-empty {
-    color: var(--c-purple);
+    color: #6f7376;
     font-size: 1.5rem;
     margin-top: 1em;
   }
